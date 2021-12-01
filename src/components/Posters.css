@@ -1,0 +1,35 @@
+.posters__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  margin: 0 30px 30px;
+}  
+.posters__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 30px;
+}  
+.posters__item__link {  
+  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+}
+.posters__item__img {
+  margin: 10px;
+  width: 300px;
+  height: 450px;
+  transition: all 0.2s linear;
+}  
+.posters__item__img:hover {
+  transform: scale(1.1);
+}  
+@media screen and (min-width: 1290px){
+  .posters__items{
+    margin: 30px 170px;
+  }
+}

@@ -1,0 +1,141 @@
+.background-photo{
+    width: 100%;
+    height: 500px;
+    font-size: 50px;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+.classes__title{
+    display: flex;
+    justify-content: center;
+    margin: 210px 0;
+    font-size: 60px;
+    color: white;
+}
+.classes__container{
+    background-color: white;
+    padding: 30px 0;
+}
+.classes__container p{
+    font-size: 20px;
+    text-align: start;
+    margin: 30px 0 10px;
+}
+.dances-section h3,
+.timetable-section h3,
+.tarifs-section h3{
+    font-size: 30px;
+    text-align: center;
+    margin: 30px 0 20px;
+    color: black;
+}
+.classes__shortcuts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;    
+}
+.classes__shortcuts button{
+    margin: 10px 0;
+    width: 200px;
+    font-size: 20px;
+    padding: 5px 0;
+}
+.dances-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+.dances-section div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dances-section__p{
+    margin-top: 30px;
+}
+.dances-section button{
+    margin: 20px 0;
+}
+.timetable-section{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 30px 25px;
+}
+.timetable-section__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.timetable-section button{
+    margin: 20px 0;
+}
+.tarifs-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    padding-top: 30px;
+}
+.tarifs-section p {
+    font-size: 20px;
+    text-align: start;
+    margin: 10px 0;
+}
+.tarifs-section button{
+    margin: 10px 0;
+}
+
+@media screen and (min-width: 500px){
+    .classes__shortcuts{
+        display: flex;
+        flex-direction: row;
+        justify-content: center; 
+        margin: 45px 30px 60px;   
+    }
+    .classes__shortcuts button{
+        margin: 0 10px;
+        width: 150px;
+        font-size: 20px;
+        padding: 5px 0;
+    }
+    .timetable-section{
+        margin: 30px;
+    }
+}
+@media screen and (min-width: 660px){
+    .classes__shortcuts button{
+        width: 200px;
+    }   
+}
+@media screen and (min-width: 946px){
+    .timetable-section,
+    .tarifs-section,
+    .dances-section{
+        margin: 30px 100px;
+    }
+}
+@media screen and (min-width: 1000px){
+    .classes__shortcuts{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 1050px){
+    .timetable-section,
+    .tarifs-section,
+    .dances-section{
+        margin: 30px 110px;
+    }
+}
+@media screen and (min-width: 1450px){
+    .timetable-section,
+    .tarifs-section,
+    .dances-section{
+        margin: 30px 170px;
+    }
+}

@@ -1,0 +1,250 @@
+.marketing-section__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+}
+.marketing-section__about-us h3,
+.marketing-section__shortcuts-container h3,
+.marketing-section__reviews h3{
+    font-size: 30px;
+    text-align: center;
+    margin: 30px 0 20px;
+    color: black;
+}
+.marketing-section__shortcuts-container h3{
+    color: white;
+}
+.marketing-section__about-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 30px 30px;
+}
+.marketing-section__about-us__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin-top: 20px;
+}
+.marketing-section__about-us__info img{
+    height: auto;
+    width: 100%;
+    margin: 10px 0;
+    padding: 5px;
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    border-radius: 10px;
+
+}
+.marketing-section__about-us__info p{
+    font-size: 20px;
+    text-align: start;
+    margin: 0 0 10px;
+}
+.marketing-section__shortcuts-container{
+    margin: 30px 0 0;
+    padding: 30px 0 60px;
+    background-color: rgb(39, 38, 38);
+}
+.marketing-section__shortcuts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px 10px 0;
+}
+.marketing-section__each-shortcut{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: auto;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    border-radius: 10px;
+}
+.marketing-section__each-shortcut img{
+    width: 250px;
+    height: 180px;
+    margin: 0 0 10px;
+}
+.marketing-section__each-shortcut h4{
+    margin: 10px;
+    font-size: 25px;
+}
+.marketing-section__each-shortcut p{
+    text-align: center;
+    margin: 0 0 20px;
+    font-size: 20px;
+}
+.marketing-section__each-shortcut button{
+    margin: 0;
+    font-size: 15px;
+}
+.marketing-section__reviews{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 30px;
+}
+.reviews__slider{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px 30px;
+    width: 350px;
+    height: 600px;
+}
+.reviews__each-review{
+    width: 300px;
+    height: 550px;
+    margin: 20px;
+    padding: 0 10px;
+    padding-bottom: 30px;
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+}
+.each-review__stars{
+    display: flex;
+    justify-content: center;
+}
+.each-review__stars i{
+    padding: 8px;
+    margin: 30px 0 20px;
+}
+.each-review__opinion{
+    text-align: center;
+    margin: 10px 0 20px;
+    font-size: 20px;
+    padding: 10px 0;
+}
+.each-review__signature{
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+}
+.reviews__right-arrow i, .reviews__left-arrow i{
+    font-size: 25px;
+    cursor: pointer;
+    user-select: none;
+}
+.slide{
+    transition-duration: 1s ease;
+}
+.slide-active{
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08);
+}
+
+@media screen and (min-width: 500px){
+    .marketing-section__about-us__info{
+        width: 400px;
+    }
+}
+@media screen and (min-width: 650px){
+    .marketing-section__about-us__info{
+        width: 500px;
+    }
+    .reviews__slider{
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+    .reviews__slider{
+        width: 500px;
+        height: 500px;
+    }
+    .reviews__each-review{
+        width: 500px;
+        height: 450px;
+    }
+}
+@media screen and (min-width: 750px){
+    .marketing-section__about-us__info{
+        width: 600px;
+    }
+}
+@media screen and (min-width: 850px){
+    .marketing-section__about-us__info{
+        width: 700px;
+    }
+    .reviews__slider{
+        width: 700px;
+        height: 500px;
+    }
+    .reviews__each-review{
+        width: 700px;
+        height: 350px;
+    }
+}
+@media screen and (min-width: 1000px){
+    .marketing-section__about-us__info{
+        width: 850px;
+    }
+}
+@media screen and (min-width: 1110px){
+    .marketing-section__about-us__info{
+        width: 950px;
+    }
+    .reviews__slider{
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    .reviews__slider{
+        width: 900px;
+        height: 300px;
+    }
+    .reviews__each-review{
+        width: 900px;
+        height: 300px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .marketing-section__about-us__info{
+        width: 1000px;
+    }
+    .reviews__slider{
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+}
+@media screen and (min-width: 1250px){
+    .reviews__slider{
+        width: 1100px;
+        height: 300px;
+    }
+    .reviews__each-review{
+        width: 1100px;
+        height: 300px;
+    }    
+}
+@media screen and (min-width: 1450px){
+    .marketing-section__about-us__info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 1100px;
+    }
+    .marketing-section__about-us__info p{
+        margin-right: 30px;
+    }
+    .marketing-section__about-us__info img{
+        width: 75%;
+    }
+    .marketing-section__each-shortcut{
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    .reviews__slider{
+        margin-right: 120px;
+        margin-left: 120px;
+    }
+}

@@ -1,0 +1,129 @@
+.timetable-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    border-radius: 10px;
+}
+.timetable-container__timetable{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.timetable__table{
+    width: 100%;
+    margin: 5px 0;
+    border-collapse: collapse;
+}
+.timetable__table td, 
+.timetable__table th{
+    border: 1px solid black;
+    text-align: center;
+}
+.timetable__table th{
+    font-size: 8px;
+    padding: 3px;
+}
+.room1, 
+.room2, 
+.room3{
+    font-size: 10px;
+    padding: 5px 3px;
+}
+.room1{
+    background-color: #fc3939;
+}
+.room2{
+    background-color: #a72020;
+}
+.room3{
+    background-color: #ee7c7c;
+}
+.timetable__legend{
+    margin: 10px 0;
+}
+.timetable-container__legends{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.legend__rooms{
+    margin-right: 10px;
+}
+.legend__rooms,
+.legend__classes{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.legend__room1,
+.legend__room2,
+.legend__room3{
+    width: 100px;
+    padding: 5px;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 15px;
+}
+.legend__room1{
+    background-color: #fc3939;
+}
+.legend__room2{
+    background-color: #a72020;
+}
+.legend__room3{
+    background-color: #ee7c7c;
+}
+.legend__classes__table{
+    margin-left: 10px;
+    border-style: none;
+    text-align: start;
+    min-width:max-content;
+}
+.second-td{
+    padding-left: 20px;
+}
+
+@media screen and (min-width: 450px){
+    .timetable-container{
+        padding: 10px;
+    }
+}
+@media screen and (min-width: 600px){
+    .timetable-container{
+        padding: 20px;
+    }
+    .timetable__table th,
+    .timetable__table td{
+        font-size: 15px;
+        padding: 8px;
+    }
+}
+@media screen and (min-width: 850px){
+    .timetable-container{
+        padding: 30px;
+    }
+}
+@media screen and (min-width: 1120px){
+    .timetable-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .timetable-container__legends{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 15px;
+    }
+    .timetable-container__timetable{
+        width: 100%;
+        margin-right: 15px;
+    }
+    .legend__rooms{
+        margin-bottom: 30px;
+    }
+}
